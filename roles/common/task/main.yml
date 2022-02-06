@@ -1,0 +1,5 @@
+---
+- name: add user
+  become: true
+  user: name={{syncthing_user}} shell=/bin/bash home={{syncthing_home}}
+
